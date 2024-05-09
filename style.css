@@ -26,6 +26,10 @@ html::-webkit-scrollbar-thumb{
 body{
     background: black;
 }
+section{
+    padding: 2rem 7%;
+
+}
 .header{
     background: black;
     display: flex;
@@ -86,4 +90,27 @@ body{
 }
 .header.search-form label:hover{
     color: #d3ad7f;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(https://t3.ftcdn.net/jpg/01/65/26/68/360_F_165266848_L3BY3M1hGC706bxGFpSUlg85y5nD85iJ.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.home .content h3{
+    font-family: sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.home .content p{
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-transform: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
 }
