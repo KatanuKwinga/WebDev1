@@ -207,5 +207,45 @@ section{
     font-size: 2rem;
     color: #fff;
  }
- 
+ .review .box-container .box .stars{
+    color: #d3ad7f;
+ }
+ .contact .row{
+    display: flex;
+    align-items: center;
+    background: black;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+ .contact .row .map{
+    flex: 1 1 45rem;
+    width: 80%;
+    object-fit: cover;
+ }
+ .contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+ }
+ .contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+ }
+ .contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: black;
+    border: 1rem solid rgba(255,255,255,.3);
+ }
+ .contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+ }
 
