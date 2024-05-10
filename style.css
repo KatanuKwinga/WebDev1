@@ -15,7 +15,7 @@ html{
 }
 
 ::-webkit-scrollbar{
-    width: 20px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
     background: #d1e5ff;
@@ -180,3 +180,32 @@ section{
 .menu .box-container .box:hover > *{
    color: black;
  }
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    border: .1rem solid rgba(255,255,255,.3);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+ }
+ 
+
