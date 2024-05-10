@@ -219,7 +219,7 @@ section{
  }
  .signup .row .map{
     flex: 1 1 45rem;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
  }
  .signup .row form{
