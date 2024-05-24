@@ -97,6 +97,13 @@ section{
     border-bottom: 1px solid #d3ad7f;
     padding-bottom: 2px;
 }
+.header .icons{
+    color: #fff;
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+}
+
 .home{
     min-height: 100vh;
     display: flex;
