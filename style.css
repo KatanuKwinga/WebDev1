@@ -103,6 +103,12 @@ section{
     display: flex;
     gap: 20px;
 }
+.header .icons .shopping:hover{
+    color: #d3ad7f;
+}
+.header .icons .user:hover{
+    color: #d3ad7f;
+}
 
 .home{
     min-height: 100vh;
