@@ -115,7 +115,7 @@ section{
     top: 100%;
     right: 10%;
     width: 320px;
-    max-height: 0px;
+    max-height: 600px;
     overflow: hidden;
     transition: max-height 0.5s;
 }
@@ -301,4 +301,77 @@ section{
     text-transform: none;
     background: none;
  }
+.login .loginBx{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    background: rgb(1, 1, 17);
+    flex-wrap: wrap;
+}
+.login .loginBx .imgBx{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.login .loginBx .imgBx img{
+    width: 100%;
+}
+.login .loginBx .contentBx{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.login .loginBx .formBx{
+    width: 50%;
+}
+.login .loginBx .contentBx h1{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #d3ad7f;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.login .loginBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+.login .loginBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.login .loginBx .formBx .inputBx input[type="text"]{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .loginBx .formBx .inputBx input[type="password"]{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .loginBx .formBx .inputBx input[type="submit"]{
+    width: 500px;
+    height: 30px;
+    font-weight: 400;
+    border: 1px;
+    color:#fff;
+    background-color: #d3ad7f;
+}
+
+
+    
+
+
+
+
+
 
