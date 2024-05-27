@@ -27,7 +27,7 @@
            <div class="menu-Icon">
             <i class="fa-solid fa-user fa-2x"></i>
            </div>
-           </div>
+          </div>
            <!--Drop-down menu code-->
            <div class="sub-menu-wrap">
             <div class="sub-menu">
@@ -56,7 +56,11 @@
                 </a>
             </div>
            </div>
-           
+           <script>
+            document.querySelector('.menu-Icon').addEventListener('click', function(){
+                document.getElementById('dropdownMenu').classList.toggle('show');
+            });
+           </script>
         </header>
    
    
