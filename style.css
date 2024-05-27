@@ -446,6 +446,23 @@ section{
     color:#fff;
     background-color: #d3ad7f;
 }
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.contactUs .title span{
+    color: #d3ad7f;
+}
+
 
 
     
