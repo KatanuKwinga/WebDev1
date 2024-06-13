@@ -476,7 +476,7 @@ section{
     background:bisque;
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 }
-.box{
+.contactUs .box{
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -493,36 +493,36 @@ section{
     margin-bottom: 10px;
 }
 /*form*/
-.formBox{
+.contactUs .formBox{
     position: relative;
     width: 100%;
 }
-.formBox .row50{
+.contactUs .formBox .row50{
     display: flex;
     gap: 20px;
 }
-.inputBox{
+.contactUs .inputBox{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
 }
-.formBox .row100 .inputBox{
+.contactUs .formBox .row100 .inputBox{
     width: 100%;
 }
-.inputBox span{
+.contactUs .inputBox span{
     color: rgb(14, 14, 59);
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
 }
-.inputBox input{
+.contactUs .inputBox input{
     padding: 10px;
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
 }
-.inputBox textarea{
+.contactUs .inputBox textarea{
     padding: 10px;
     font-size: 1.1em;
     outline: none;
@@ -531,7 +531,7 @@ section{
     min-height: 220px;
     margin-bottom: 10px;
 }
-.inputBox input[type ="submit"]{
+.contactUs .inputBox input[type ="submit"]{
     background: #d3ad7f;
     color: #fff;
     border: none;
