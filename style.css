@@ -536,21 +536,28 @@ section{
     padding-top: 5px;  
     padding-bottom: 5px; 
 }
+
 /*Contact Info*/
 .contactUs .contactInfo{
     background-color: rgb(3, 3, 31);
+
 }
 .contactInfo h3{
     color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 .contactInfo div{
     display: flex;
-    align-items: center;
+   
     margin-bottom: 10px;
+    
 }
 .contactInfo .infoBox div span{
-    min-width: 40px;
-    height: 40px;
+    min-width: 30px;
+    height: 30px;
     color: #fff;
     background: #153865;
     display: flex;
@@ -559,16 +566,20 @@ section{
     font-size: 1.5em;
     border-radius: 50%;
     margin-right: 15px;
+    margin-left: 10px;
 }
 .contactInfo .infoBox div p{
     color: #fff;
-    font-size: 2rem;
-    ;
+    font-size: 1.2rem;
+}
+.contactInfo .infoBox .location{
+    margin-bottom: 2px;
+    font-size: 1.5rem;
 }
 .contactInfo .infoBox div a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .sci{
    margin-top: 40px;
