@@ -605,7 +605,50 @@ section{
     height: 100%;
 }
 
-
+/*css for products page*/
+.p_heading{
+    margin-top: 75px;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.p_heading span{
+    color: #d3ad7f;
+}
+.products h3{
+    color: #fff;
+    font-size: 1.5rem;
+    border-bottom: 2px #d3ad7f;
+    margin-bottom: 5px;
+}
+.products h3 span{
+    color: #d3ad7f;
+}
+table{
+    border: solid 1px #fff;
+    width: 70%;
+    border-collapse: collapse;
+    align-items: center;
+}
+td{
+    border: solid 1px #333;
+    padding: 5px;
+    text-align: left;
+    background-color: antiquewhite;
+}
+th{
+    background-color:#d3ad7f;
+    color: rgb(3, 3, 31);
+    border: solid 1px #333;
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color:bisque;
+}
+tr:hover{
+    background-color:azure;
+}
     
 
 
