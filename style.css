@@ -192,6 +192,11 @@ section{
     line-height: 1.8;
 
 }
+/*scc for menu page*/
+.menu{
+    max-height: 500px;
+    overflow: scroll;
+}
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -225,6 +230,11 @@ section{
 }
 .menu .box-container .box:hover > *{
    color: black;
+ }
+ /*css for reviews page*/
+.review{
+    max-height: 500px;
+    overflow: scroll;
  }
 .review .box-container{
     display: grid;
@@ -432,6 +442,10 @@ section{
     color:#fff;
     background-color: #d3ad7f;
 }
+.contactUs{
+    max-height: 600px;
+    overflow: scroll;
+ }
 .contactUs{
     position: relative;
     width: 100%;
