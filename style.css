@@ -11,8 +11,6 @@ html{
     font-size: 62.5%;
     overflow: hidden;
 }
-
-
 body{
     background: black;
 }
@@ -513,6 +511,7 @@ section{
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
+    border-radius: 20px;
 }
 .contactUs .inputBox textarea{
     padding: 10px;
@@ -520,8 +519,9 @@ section{
     outline: none;
     border: 1px solid #333;
     resize: none;
-    min-height: 20px;
+    min-height: 100px;
     margin-bottom: 5px;
+    border-radius: 20px;
 }
 .contactUs .inputBox input[type ="submit"]{
     align-items: center;
@@ -547,16 +547,16 @@ section{
     margin-top: 10px;
     margin-left: 10px;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #fff;
 }
 .contactInfo div{
     display: flex;
-   
     margin-bottom: 10px;
     
 }
-.contactInfo .infoBox div span{
-    min-width: 30px;
+.contactInfo .infoBox li span{
+    width: 30px;
     height: 30px;
     color: #fff;
     background: #153865;
@@ -568,21 +568,17 @@ section{
     margin-right: 15px;
     margin-left: 10px;
 }
-.contactInfo .infoBox div p{
+.contactInfo .infoBox .details li p{
     color: #fff;
-    font-size: 1.2rem;
-}
-.contactInfo .infoBox .location{
-    margin-bottom: 2px;
     font-size: 1.5rem;
+    margin-left: 10px;
 }
-.contactInfo .infoBox div a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+.contactInfo .infoBox .li{
+    display: flex;
 }
+
 .sci{
-   margin-top: 40px;
+   margin-top: 20px;
    display: flex; 
 }
 .sci li{
