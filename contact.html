@@ -5,31 +5,43 @@
         <title>MyWebsite</title>
        <!-- custom css file link -->
         <link rel="stylesheet" href="style.css">
+        <!--Link to the page for icons used in the code-->
         <script src="https://kit.fontawesome.com/061a76efba.js"crossorigin="anonymous"></script>
     </head>
     <body>
         <!--Header section starts-->
         <header class="header">
+            <!--Code for bakery logo and name in the navbar-->
             <i class="fa-solid fa-cake-candles fa-3x" style="color: #d3ad7f;"></i>
             <h1 class="name" style="color: #fff;text-align: left;">THE<span> LITTLE</span> BAKERY</h1>
             <nav class="navbar">
+                <!--Code for the different links to other pages in the navbar-->
                 <a href="index.html">Home</a>
                 <a href="About.html">About Us</a>
-                <a href="Menu.html">Our Menu</a>
+                <a href="Menu.html">Menu</a>
+                <a href="products.html">Our Products</a>
                 <a href="Reviews.html">Reviews</a>
                 <a href="contact.html">Contact Us</a>
+                <div class="dropdown-container">
+                    <!--Dropdown menu from the link 'More For You'-->
+                    <a href="#" class="dropdown-toggle">More For You</a>
+                    <ul class="dropdown">
+                        <!--Icons and links to the different pages in the dropdown menu-->
+                        <li><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="login.html">Log In</a></li>
+                        <li><i class="fa-solid fa-user fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="signup.html">Sign Up</a></li>
+                        <li><i class="fa-solid fa-right-from-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="#">Log Out</a></li>
+                    </ul>
+                </div>
             </nav>
-            <i class="fa-solid fa-bars fa-3x" style="color: #fff;"></i>
         </header>
-   
-   
         <!--Header section ends-->
         <!--Contact Us section starts-->
         <div class="contactUs">
             <div class="title">
-                <h1><span>CONTACT</span> US</h1>
+                <h1><span>CONTACT</span> US</h1><!--Title-->
             </div>
             <div class="box">
+                <!--Contact form where customer inputs their details-->
                 <div class="contact form">
                     <form action="https://api.web3forms.com/submit" method="POST"></form>
                     <h3>SEND US A MESSAGE</h3>
@@ -72,7 +84,7 @@
                      </div>
                     </form>
                 </div>
-                <!--Info box-->
+                <!--Info box giving out where the customer can contact the bakery to order-->
                 <div class="contactInfo">
                     <h3>CONTACT INFO</h3>
                     <div class="infoBox">
@@ -94,7 +106,7 @@
                     </div>
 
 
-                    <!--Social media links-->
+                    <!--Social media links to the bakery's social media pages-->
                     <ul class="sci">
                         <li><a href="#"><i class="fa-brands fa-facebook" style="margin-left: 11rem;"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -102,7 +114,7 @@
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
-                <!--Map-->
+                <!--Map to where the bakery is physically located-->
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817331162601!2d36.
                     82356199999999!3d-1.2834673999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6678064cf

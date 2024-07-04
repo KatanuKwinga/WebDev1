@@ -1,3 +1,4 @@
+/*Overall CSS for the Website*/
 *{
     font-family: sans-serif ;
     margin: 0;padding: 0;
@@ -18,6 +19,7 @@ section{
     padding: 2rem 7%;
 
 }
+/*CSS for the Home page heading and button*/
 .heading{
     text-align: center;
     color: #fff;
@@ -32,7 +34,6 @@ section{
 .name span{
     color: #d3ad7f;
 }
-
 .btn{
     margin-top: 2px;
     display: inline-block;
@@ -62,6 +63,7 @@ section{
     background: #fff;
     color: black;
 }
+/*Navbar header section with the logo, title and links to other pages*/
 .header{
     background: black;
     display: flex;
@@ -163,6 +165,7 @@ section{
     background-size: cover;
     background-position:center;
 }
+/*Home page content CSS*/
 .home .content h3{
     font-family: sans-serif;
     font-size: 6rem;
@@ -177,6 +180,9 @@ section{
     padding: 1rem 0;
     color: #eee;
 }
+/*End of Home Page CSS*/
+
+/*Beginning of About Us Page CSS*/
 .about .row{
     display: flex;
     align-items: center;
@@ -204,7 +210,9 @@ section{
     line-height: 1.8;
 
 }
-/*scc for menu page*/
+/*End of About Us page CSS*/
+
+/*CSS for menu page*/
 .menu{
     max-height: 500px;
     overflow: scroll;
@@ -243,6 +251,8 @@ section{
 .menu .box-container .box:hover > *{
    color: black;
  }
+ /*End of menu page CSS*/
+
  /*css for reviews page*/
 .review{
     max-height: 500px;
@@ -278,6 +288,9 @@ section{
  .review .box-container .box .stars{
     color: #d3ad7f;
  }
+ /*End of Reviews Page CSS*/
+
+ /*Sign up page CSS*/
  .signup .row{
     display: flex;
     align-items: center;
@@ -316,73 +329,7 @@ section{
     text-transform: none;
     background: none;
  }
-.login .loginBx{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    align-items: center;
-    background: rgb(1, 1, 17);
-    flex-wrap: wrap;
-}
-.login .loginBx .imgBx{
-    flex: 1 1 45rem;
-    padding: 2rem;
-}
-.login .loginBx .imgBx img{
-    width: 100%;
-}
-.login .loginBx .contentBx{
-    flex: 1 1 45rem;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
-.login .loginBx .formBx{
-    width: 50%;
-}
-.login .loginBx .contentBx h1{
-    font-size: 20px;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #d3ad7f;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-.login .loginBx .formBx .inputBx{
-    margin-bottom: 20px;
-}
-.login .loginBx .formBx .inputBx span{
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: inline-block;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.login .loginBx .formBx .inputBx input[type="text"]{
-    width: 300px;
-    height: 30px;
-    padding: 10px;
-    font-size: 16px;
-}
-.login .loginBx .formBx .inputBx input[type="password"]{
-    width: 300px;
-    height: 30px;
-    padding: 10px;
-    font-size: 16px;
-}
-.login .loginBx .formBx .inputBx input[type="submit"]{
-    width: 500px;
-    height: 30px;
-    font-weight: 400;
-    border: 1px;
-    color:#fff;
-    background-color: #d3ad7f;
-}
-
-
+ 
 .signup .signupBx{
     margin-top: 50px;
     margin-bottom: 100px;
@@ -391,6 +338,7 @@ section{
     background: rgb(1, 1, 17);
     flex-wrap: wrap;
 }
+/*Image*/
 .signup .signupBx .imgBx{
     flex: 1 1 45rem;
     padding: 2rem;
@@ -406,6 +354,7 @@ section{
     width: 50%;
     height: 100%;
 }
+/*Form*/
 .signup .signupBx .formBx{
     width: 50%;
 }
@@ -454,6 +403,79 @@ section{
     color:#fff;
     background-color: #d3ad7f;
 }
+ /*End of Sign up page CSS*/
+
+ /*Login page CSS*/
+.login .loginBx{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    background: rgb(1, 1, 17);
+    flex-wrap: wrap;
+}
+/*Image*/
+.login .loginBx .imgBx{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.login .loginBx .imgBx img{
+    width: 100%;
+}
+.login .loginBx .contentBx{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+/*Form*/
+.login .loginBx .formBx{
+    width: 50%;
+}
+.login .loginBx .contentBx h1{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #d3ad7f;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.login .loginBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+.login .loginBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.login .loginBx .formBx .inputBx input[type="text"]{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .loginBx .formBx .inputBx input[type="password"]{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .loginBx .formBx .inputBx input[type="submit"]{
+    width: 500px;
+    height: 30px;
+    font-weight: 400;
+    border: 1px;
+    color:#fff;
+    background-color: #d3ad7f;
+}
+/*End of Login Page CSS*/
+
+/*Contagt Us page CSS*/
 .contactUs{
     max-height: 600px;
     overflow: scroll;
@@ -507,7 +529,7 @@ section{
 
 
 }
-/*form*/
+/*Contact form*/
 .contactUs .formBox{
     position: relative;
     width: 100%;
@@ -602,7 +624,7 @@ section{
 .contactInfo .infoBox .li{
     display: flex;
 }
-
+/*Map*/
 .sci{
    margin-top: 20px;
    display: flex; 
@@ -626,10 +648,11 @@ section{
     width: 100%;
     height: 100%;
 }
+/*End of Contact us page CSS*/
 
 /*css for products page*/
 .p_heading{
-    margin-top: 75px;
+    margin-top: 100px;
     color: #fff;
     font-size: 3rem;
     text-align: center;
