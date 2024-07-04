@@ -73,6 +73,59 @@ section{
     top:0; left:0; right:0;
     z-index: 1000;
 }
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-toggle {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 50px;
+}
 .header .navbar a{
     margin: 0 1rem; 
     font-size: 1.5rem;
@@ -83,64 +136,23 @@ section{
     border-bottom: 1px solid #d3ad7f;
     padding-bottom: 2px;
 }
-.header .icons{
-    color: #fff;
-    justify-content: right;
-    display: flex;
-    gap: 20px;
-}
 
-.header .icons .shopping:hover{
-    color: #d3ad7f;
-}
-.header .icons .menu-Icon:hover{
-    color: #d3ad7f;
-}
-.header .icons .shopping{
-    cursor: pointer;
-}
-.header .icons .menu-Icon{
-    cursor: pointer;
-}
-.sub-menu-wrap{
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 320px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-    z-index: 1;
-}
-.sub-menu-wrap .show{
+.navbar div ul.dropdown li{
     display: block;
 }
-.sub-menu{
-    background:rgb(1, 1, 17);
-    padding: 20px;
-    margin: 10px;
-    
+.navbar div ul.dropdown{
+    width: 300px;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
 }
-.sub-menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #d3ad7f;
-    margin: 12px 0;
+.navbar div:hover ul.dropdown{
+    display: block;
 }
-.sub-menu-link p{
-    font-size: 15px;
-    width: 100%   
-}
-.sub-menu-link p:hover{
-    font-weight: 600;
-    color: #fff;
-}
-.sub-menu-link .icons2{
-    width: 40px;
-    background:rgb(14, 14, 59);
-    border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
+.navbar div ul.dropdown .login{
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .home{
