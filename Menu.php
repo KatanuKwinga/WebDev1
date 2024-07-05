@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
         <meta charset = "UTF-8"/>
         <title>MyWebsite</title>
        <!-- custom css file link -->
@@ -93,3 +92,4 @@
         </section>
         <!--Menu section ends-->
     </body>
+</html>
