@@ -28,7 +28,7 @@
             <div class="box">
                 <!--Contact form where customer inputs their details-->
                 <div class="contact form">
-                    <form action="https://api.web3forms.com/submit" method="POST"></form>
+                    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contact form"></form>
                     <h3>SEND US A MESSAGE</h3>
                     <form>
                      <div class="formBox">
