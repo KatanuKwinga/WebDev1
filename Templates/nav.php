@@ -10,6 +10,8 @@
                 <a href="products.php">Our Products</a>
                 <a href="Reviews.php">Reviews</a>
                 <a href="contact.php">Contact Us</a>
+                <a href="view_messages.php">View Messages</a>
+                <a href="edit_messages.php">Edit Messages</a>
                 <div class="dropdown-container">
                     <!--Dropdown menu from the link 'More For You'-->
                     <a href="#" class="dropdown-toggle">More For You</a>
