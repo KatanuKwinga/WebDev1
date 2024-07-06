@@ -3,6 +3,23 @@
         <!--Header section starts-->
         <?php include_once("Templates/nav.php"); ?>
         <!--Header section ends-->
+        <?php
+        if(isset($_POST["send_message"])){
+            $fn = $_POST["fullname"];
+            $mail = $_POST["email_address"];
+            $subject = $_POST["subject_line"];
+            $message = $_POST["client_message"];
+
+            $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
+
+            if ($conn->query($insert_message) === TRUE) {
+                header("Location: contact.php");
+                exit();
+            } else {
+                echo "Error: " . $insert_message . "<br>" . $conn->error;
+            }
+        }
+        ?>
         <!--Contact Us section starts-->
         <div class="contactUs">
             <div class="title">
