@@ -17,8 +17,8 @@
                     <a href="#" class="dropdown-toggle">More For You</a>
                     <ul class="dropdown">
                         <!--Icons and links to the different pages in the dropdown menu-->
-                        <li><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="login.html">Log In</a></li>
-                        <li><i class="fa-solid fa-user fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="signup.html">Sign Up</a></li>
+                        <li><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="login.php">Log In</a></li>
+                        <li><i class="fa-solid fa-user fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="signup.php">Sign Up</a></li>
                         <li><i class="fa-solid fa-right-from-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="#">Log Out</a></li>
                     </ul>
                 </div>
