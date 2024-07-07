@@ -1,5 +1,7 @@
 <?php
 require_once("includes/db_connect.php");
+include_once("Templates/head.php");
+include_once("Templates/nav.php");
 
 $messageId=mysqli_real_escape_string($conn, $_GET["messageId"]);
 
@@ -42,9 +44,9 @@ if(isset($_POST["update_message"])){
         <label for="sb">Subject:</label><br>
         <select name="subject_line" id="sb" required>
             <option value="<?php print $spot_msg_row["subject_line"];?>"><?php print $spot_msg_row["subject_line"];?></option>
-            <option value="Email Support">Email Support</option>
-            <option value="eLearning Support">eLearning Support</option>
-            <option value="AMS Support">AMS Support</option>
+            <option value="Account support">Account Support</option>
+            <option value="Place an order">Place an Order</option>
+            <option value="Complaints">Complaints</option>
         </select><br><br>
 
         <label for="sb">Message:</label><br>
