@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
     <?php include_once("Templates/head.php"); ?>
 
     <body>
