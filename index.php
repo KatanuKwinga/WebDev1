@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <?php include_once("Templates/head.php"); ?>
+<?php include_once("Templates/head.php"); ?>
     <body>
         <!--Header section starts-->
         <?php include_once("Templates/nav.php"); ?>
