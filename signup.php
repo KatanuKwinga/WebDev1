@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+    <?php require_once("includes/db_connect.php"); ?>
     <?php include_once("Templates/head.php"); ?>
     <body>
         <!--Header section starts-->
