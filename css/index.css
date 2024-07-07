@@ -1,0 +1,44 @@
+/*CSS for the Home page heading and button*/
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: #d3ad7f;
+    text-transform: uppercase;
+}
+.name span{
+    color: #d3ad7f;
+}
+.btn{
+    margin-top: 2px;
+    display: inline-block;
+    padding: 10px  7rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: #fff;
+    color: black;
+}
+
+.btn2{
+    margin-top: 2px;
+    display: inline-block;
+    padding: 10px  7rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer
+
+}
+.btn2:hover{
+    background: #fff;
+    color: black;
+}
