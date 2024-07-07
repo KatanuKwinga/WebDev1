@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
     <?php include_once("Templates/head.php"); ?>
     <body>
         <!--Header section starts-->
@@ -30,3 +29,4 @@
         </section>
         <!--About section ends-->
     </body>
+    </html>
