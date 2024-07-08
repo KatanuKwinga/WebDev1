@@ -28,7 +28,7 @@ if(isset($_GET["DelId"])){
             <tr>
                 <th colspan="2">Sender Name</th>
                 <th>Sender Email</td>
-                <th>Subject Line</th>
+                <th>Sender Number</th>
                 <th>Time</th>
                 <th>Action</th>
             </tr>
@@ -47,9 +47,9 @@ if(isset($_GET["DelId"])){
         <td><?php print $en; ?>.</td>
         <td><?php print $sel_msg_row["sender_name"]; ?></td>
         <td><?php print $sel_msg_row["sender_email"]; ?></td>
-        <td><?php print "<strong>" . $sel_msg_row["subject_line"] .'</strong> - ' . substr($sel_msg_row["text_message"], 0, 20) . '...' ; ?></td>
+        <td><?php print "<strong>" . $sel_msg_row["phone_number"] .'</strong> - ' . substr($sel_msg_row["text_message"], 0, 20) . '...' ; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
-        <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>" onclick="return confirm('This ation will delete this message permanently.\nAre you sure you want ot proceed?');">Del</a> ]</td>
+        <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>" onclick="return confirm('This ation will delete this message permanently.\n Are you sure you want ot proceed?');">Del</a> ]</td>
     </tr>
 <?php
     }
@@ -57,16 +57,6 @@ if(isset($_GET["DelId"])){
     echo "0 results";
     }
 ?>
-        </tbody>
-        <thead>
-            <tr>
-                <th colspan="2">Sender Name</th>
-                <th>Sender Email</td>
-                <th>Subject Line</th>
-                <th>Time</th>
-                <th>Action</th>
-            </tr>
-        </thead>
      </table>
-        </div>
+     </div>
 </div>
