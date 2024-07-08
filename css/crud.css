@@ -222,20 +222,20 @@ table {
     margin: 20px 0;
 }
 
-/* Table, table header, and table cell styling 
+/* Table, table header, and table cell styling */
 table, th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
 
-/* Table header background color 
+/* Table header background color */
 th {
-    background-color: #333;
+    background-color:#d3ad7f;
     color: white;
 }
 
-/* Message box styling 
+/* Message box styling */
 .message {
     margin: 20px 0;
     padding: 10px;
@@ -327,7 +327,7 @@ body {
     margin-left: 50px;
 }
 
-/* Main content styles 
+/* Main content styles */
 .main-content {
     padding: 20px;
     background-color: #ffffff;
@@ -343,7 +343,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Button styles 
+/* Button styles */
 .button-container {
     text-align: center;
     margin-top: 20px;
@@ -351,8 +351,8 @@ footer {
 
 .button {
     display: inline-block;
-    background-color: #00274d; /* Dark blue 
-    color: #ffd700; /* Gold 
+    background-color: #00274d; /* Dark blue */
+    color: #ffd700; /* Gold */
     border: none;
     padding: 15px 32px;
     text-decoration: none;
@@ -363,6 +363,6 @@ footer {
 }
 
 .button:hover {
-    background-color: #ffd700; /* Gold 
-    color: #00274d; /* Dark blue 
+    background-color: #ffd700; /* Gold */
+    color: #00274d; /* Dark blue */
 }
