@@ -28,7 +28,7 @@ section{
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
-.heading span{
+.header span{
     color: #d3ad7f;
     text-transform: uppercase;
 }
@@ -157,7 +157,7 @@ section{
     margin-left: 5px;
     margin-top: 5px;
 }
-
+/*general look of the home page*/
 .home{
     min-height: 100vh;
     display: flex;
