@@ -1,5 +1,5 @@
 <?php require_once("includes/db_connect.php"); ?>
-        <?php include_once("Templates/head.php"); ?>
+<?php include_once("Templates/head.php"); ?>
         <!--Header section starts-->
         <?php include_once("Templates/nav.php"); ?>
         <!--Header section ends-->
@@ -21,20 +21,40 @@
         }
         ?>
         <!--Contact Us section starts-->
-        <div class="contactUs">
-            <div class="title">
-                <h1><span>CONTACT</span> US</h1><!--Title-->
-            </div>
-            <div class="box">
+        <section class="contactUs" id = "contactUs">
+            <h1 class="heading"><span> CONTACT </span> US<h1>    
+               <!-- <div class="title">
+                <h1><span>CONTACT</span> US</h1>Title
+            </div>-->
+            <div class="row">
+                <form action = "<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "POST" class = "contacts_form">
+                    <label for = "fn"><h1>Fullname : </h1></label><br><br>
+                    <input type = "text" id = "fn" placeholder = "Fullname" name = "fullname" class = "box" required><br><br>
+
+                    <label for = "em">Email Address:</label><br>
+                    <input type = "email" id = "em" placeholder = "Email Address" name = "email_address" class = "box" required><br><br>
+
+                    <label for = "sb">Subject:</label><br>
+                    <select name = "subject_line" id = "sb" class = "box" required>
+                        <option value = "">---Select Subject-</option>
+                        <opttion value = "Problems Ordering">Problems Ordering</option>
+                        <option value = "Complaint"> Complaints</option>
+                    </select><br><br>
+
+                    <label for = "sb"><h1>Message:</h1></label><br>
+                           <textarea name = "client_message" class = "box" id = "" cols = "30" rows = "5" required></textarea><br><br>
+                           <input type = "submit" name = "send_message" value = "Send Message">
+                </form>
+             </div>
                 <!--Contact form where customer inputs their details-->
-                <div class="contact form">
-                    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contact form"></form>
+                <!--<div class="contact form">
+                    <form action="  " method="POST" class="contact form"></form>
                     <h3>SEND US A MESSAGE</h3>
                     <form>
                      <div class="formBox">
                         <div class="row50">
                         <div class="inputBox">
-                            <input type="hidden" name="access_key" value="a4b395d3-4f31-4ae3-93a2-354b74f300d8">
+                            <input type="text" name="first name">
                             <span><i class="fa-solid fa-user" style="margin-right: 5px;"></i>First Name</span>
                             <input type="text" placeholder="Jane">
                         </div>
@@ -69,7 +89,7 @@
                      </div>
                     </form>
                 </div>
-                <!--Info box giving out where the customer can contact the bakery to order-->
+                Info box giving out where the customer can contact the bakery to order-->
                 <div class="contactInfo">
                     <h3>CONTACT INFO</h3>
                     <div class="infoBox">
