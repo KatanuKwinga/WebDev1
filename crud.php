@@ -115,7 +115,7 @@ $conn->close();
                 </div>
             </nav>
         </header>
-
+<section class = "crud" id = "crud">
 <h1 class="title">CREATE, <span>READ, </span> UPDATE &<span> DELETE</h1> <!--Title-->  
 <div class="container">
     <?php if (isset($message)): ?>
@@ -174,5 +174,6 @@ $conn->close();
         <input type="submit" name="delete" value="Delete">
     </form>
 </div>
+</section>
 </body>
 </html>
