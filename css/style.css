@@ -487,7 +487,6 @@ section{
     padding: 40px 100px;
 }
 .contactUs .title{
-    margin-top: 50px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -497,19 +496,12 @@ section{
 .contactUs .title span{
     color: #d3ad7f;
 }
-.contactUs .box .form{
-    grid-area: form;
-}
-.contactUs .box .info{
-    grid-area: info;
-}
-.contactUs .box .map{
-    grid-area: map;
-}
-.contact{
-    padding: 40px;
-    background:rgb(255, 240, 225);
-    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+.contact h3{
+    color: rgb(14, 14, 59);
+    font-weight:bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;   
+    border-bottom: 4px solid #0b044a;
 }
 .contactUs .box{
     position: relative;
@@ -521,16 +513,20 @@ section{
     "form map";
     grid-gap: 20px;
 }
-.contact h3{
-    color: rgb(14, 14, 59);
-    font-weight:bold;
-    font-size: 1.4rem;
-    margin-bottom: 10px;   
-    border-bottom: 4px solid #0b044a;
-
-
+.contactUs .box .form{
+    grid-area: form;
 }
-
+.contactUs .box .info{
+    grid-area: info;
+}
+.contactUs .box .map{
+    grid-area: map;
+}
+.contactUs{
+    padding: 40px;
+    background:rgb(255, 240, 225);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
 .contactUs .row{
     position: relative;
     width: 100%;
