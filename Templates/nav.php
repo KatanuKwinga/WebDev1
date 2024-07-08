@@ -11,6 +11,7 @@
                 <a href="contact.php">Contact</a>
                 <a href="view_messages.php">View</a>
                 <a href="edit_messages.php">Edit</a>
+                <a href = "crud.php">Admin</a>
                 <div class="dropdown-container">
                     <!--Dropdown menu from the link 'More For You'-->
                     <a href="#" class="dropdown-toggle">More</a>
