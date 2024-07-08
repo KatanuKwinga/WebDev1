@@ -32,17 +32,19 @@ section{
     top:0; left:0; right:0;
     z-index: 1000;
 }
+.name span{
+    color: #d3ad7f;
+}
+/*Dropdown menu*/
 .dropdown-container {
     position: relative;
 }
-
 .dropdown-toggle {
     color: #fff;
     text-decoration: none;
     padding: 0 15px;
     line-height: 50px;
 }
-
 .dropdown {
     display: none;
     position: absolute;
@@ -55,16 +57,13 @@ section{
     margin: 0;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
-
 .dropdown li {
     padding: 10px;
 }
-
 .dropdown li a {
     color: #000;
     text-decoration: none;
 }
-
 .dropdown-container:hover .dropdown {
     display: block;
 }
@@ -73,12 +72,10 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-
 .navbar {
     display: flex;
     align-items: center;
 }
-
 .navbar a {
     color: #fff;
     text-decoration: none;
@@ -95,7 +92,6 @@ section{
     border-bottom: 1px solid #d3ad7f;
     padding-bottom: 2px;
 }
-
 .navbar div ul.dropdown li{
     display: block;
 }
@@ -113,7 +109,7 @@ section{
     margin-left: 5px;
     margin-top: 5px;
 }
-
+/*end of header css*/
 
 /*Basic body styling 
 body {
