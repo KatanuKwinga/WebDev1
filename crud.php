@@ -125,16 +125,16 @@ $conn->close();
         </div>
     <?php endif; ?>
 
-    <h2>Create User</h2>
+    <h2>Create New Customer</h2>
     <!-- Form for creating a new user -->
     <form method="post" action="">
         Name: <input type="text" name="name" required><br>
         Email: <input type="text" name="email" required><br>
         Password: <input type="password" name="password" required><br>
         <input type="submit" name="create" value="Create">
-    </form>
-
-    <h2>Users List</h2>
+    </form><br>
+    
+    <h2>List of customers</h2>
     <!-- Table displaying the list of users -->
     <table>
         <tr>
@@ -157,7 +157,7 @@ $conn->close();
         <?php endif; ?>
     </table>
 
-    <h2>Update User</h2>
+    <h2>Update Customers</h2>
     <!-- Form for updating an existing user -->
     <form method="post" action="">
         id: <input type="number" name="id" required><br>
@@ -165,9 +165,9 @@ $conn->close();
         Email: <input type="text" name="email" required><br>
         Password: <input type="password" name="password"><br>
         <input type="submit" name="update" value="Update">
-    </form>
+    </form><br>
 
-    <h2>Delete User</h2>
+    <h2>Delete A Customer</h2>
     <!-- Form for deleting a user -->
     <form method="post" action="">
         id: <input type="number" name="id" required><br>
