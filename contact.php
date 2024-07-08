@@ -25,10 +25,10 @@
         <section class="contactUs" id = "contactUs">
             <h1 class="heading"><span> CONTACT </span> US<h1>    
             <div class="title">
-                <h1><span>CONTACT</span> US</h1>
+                <h1 style = "margin-bottom: 20px; margin-top: 0px"><span>CONTACT</span> US</h1>
              </div>
             <!--Contact form where customer inputs their details-->
-                    <div class="contact form">
+                 <div class="contact form">
                     
                     <h3>SEND US A MESSAGE</h3>
                     <form>
