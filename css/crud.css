@@ -1,4 +1,121 @@
-/* Basic body styling */
+/*Overall CSS for the Website*/
+*{
+    font-family: sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background: black;
+}
+section{
+    padding: 2rem 7%;
+
+}
+/*Navbar header section with the logo, title and links to other pages*/
+.header{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: 1rem solid rgba(255,255,255,.3);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-toggle {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 50px;
+}
+.header .navbar a{
+    margin: 0 1rem; 
+    font-size: 1.5rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: #d3ad7f;
+    border-bottom: 1px solid #d3ad7f;
+    padding-bottom: 2px;
+}
+
+.navbar div ul.dropdown li{
+    display: block;
+}
+.navbar div ul.dropdown{
+    width: 300px;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.navbar div:hover ul.dropdown{
+    display: block;
+}
+.navbar div ul.dropdown .login{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+/*Basic body styling 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,14 +123,14 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container to center content */
+/* Container to center content 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* Header styling */
+/* Header styling 
 header {
     background: #333;
     color: #fff;
@@ -22,7 +139,7 @@ header {
     border-bottom: #77aaff 3px solid;
 }
 
-/* Header link styling */
+/* Header link styling 
 header a {
     color: #fff;
     text-decoration: none;
@@ -30,7 +147,7 @@ header a {
     font-size: 16px;
 }
 
-/* Header navigation list styling */
+/* Header navigation list styling 
 header ul {
     padding: 0;
     list-style: none;
@@ -38,23 +155,23 @@ header ul {
     margin-top: 10px;
 }
 
-/* Header navigation list item styling */
+/* Header navigation list item styling 
 header ul li {
     display: inline;
     padding-left: 10px;
 }
 
-/* Branding (logo/title) styling */
+/* Branding (logo/title) styling 
 header #branding {
     float: left;
 }
 
-/* Branding (logo/title) text styling */
+/* Branding (logo/title) text styling 
 header #branding h1 {
     margin: 0;
 }
 
-/* Form styling */
+/* Form styling 
 form {
     background: #fff;
     padding: 20px;
@@ -62,7 +179,7 @@ form {
     border: 1px solid #ccc;
 }
 
-/* Input field styling */
+/* Input field styling 
 input[type="text"], input[type="password"], input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -72,7 +189,7 @@ input[type="text"], input[type="password"], input[type="number"] {
     box-sizing: border-box;
 }
 
-/* Submit button styling */
+/* Submit button styling 
 input[type="submit"] {
     background-color: #333;
     color: white;
@@ -83,39 +200,39 @@ input[type="submit"] {
     width: 100%;
 }
 
-/* Submit button hover effect */
+/* Submit button hover effect 
 input[type="submit"]:hover {
     background-color: #555;
 }
 
-/* Table styling */
+/* Table styling 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
-/* Table, table header, and table cell styling */
+/* Table, table header, and table cell styling 
 table, th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
 
-/* Table header background color */
+/* Table header background color 
 th {
     background-color: #333;
     color: white;
 }
 
-/* Message box styling */
+/* Message box styling 
 .message {
     margin: 20px 0;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
-/* General styles for the body and main content */
+/* General styles for the body and main content 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -130,15 +247,15 @@ body {
 }
 
 .header {
-    background: #00274d; /* Dark blue */
-    color: #ffd700; /* Gold */
+    background: #00274d; /* Dark blue 
+    color: #ffd700; /* Gold 
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #ffd700 3px solid;
 }
 
 .header a {
-    color: #ffd700; /* Gold */
+    color: #ffd700; /* Gold 
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -165,7 +282,7 @@ body {
     cursor: pointer;
 }
 
-/* Sidenav menu */
+/* Sidenav menu 
 .sidenav {
     height: 100%;
     width: 0;
@@ -173,7 +290,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #00274d; /* Dark blue */
+    background-color: #00274d; /* Dark blue 
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -183,7 +300,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ffd700; /* Gold */
+    color: #ffd700; /* Gold 
     display: block;
     transition: 0.3s;
 }
@@ -200,23 +317,23 @@ body {
     margin-left: 50px;
 }
 
-/* Main content styles */
+/* Main content styles 
 .main-content {
     padding: 20px;
     background-color: #ffffff;
 }
 
-/* Footer styles */
+/* Footer styles 
 footer {
-    background: #00274d; /* Dark blue */
-    color: #ffd700; /* Gold */
+    background: #00274d; /* Dark blue 
+    color: #ffd700; /* Gold 
     text-align: center;
     padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-/* Button styles */
+/* Button styles 
 .button-container {
     text-align: center;
     margin-top: 20px;
@@ -224,8 +341,8 @@ footer {
 
 .button {
     display: inline-block;
-    background-color: #00274d; /* Dark blue */
-    color: #ffd700; /* Gold */
+    background-color: #00274d; /* Dark blue 
+    color: #ffd700; /* Gold 
     border: none;
     padding: 15px 32px;
     text-decoration: none;
@@ -236,6 +353,6 @@ footer {
 }
 
 .button:hover {
-    background-color: #ffd700; /* Gold */
-    color: #00274d; /* Dark blue */
+    background-color: #ffd700; /* Gold 
+    color: #00274d; /* Dark blue 
 }
