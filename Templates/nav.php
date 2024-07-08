@@ -9,8 +9,6 @@
                 <a href="Menu.php">Menu</a>
                 <a href="Reviews.php">Reviews</a>
                 <a href="contact.php">Contact</a>
-                <a href="view_messages.php">View</a>
-                <a href="edit_messages.php">Edit</a>
                 <a href = "crud.php">Admin</a>
                 <div class="dropdown-container">
                     <!--Dropdown menu from the link 'More For You'-->
