@@ -139,7 +139,12 @@ section{
     margin: auto;
     overflow: hidden;
 }
-
+.container h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 1px #fff;
+}
 /* Header styling 
 header {
     background: #333;
