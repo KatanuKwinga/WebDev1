@@ -231,10 +231,13 @@ table, th, td {
 
 /* Table header background color */
 th {
-    background-color:#d3ad7f;
+    background-color: rgb(1, 1, 17);
     color: white;
 }
-
+/*table content background color*/
+td {
+    background-color: #fff;
+}
 /* Message box styling */
 .message {
     margin: 20px 0;
