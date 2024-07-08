@@ -111,6 +111,21 @@ section{
 }
 /*end of header css*/
 
+/*css for title*/
+.title{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: 100px;
+}
+.title span{
+    color: #d3ad7f;
+    text-transform: uppercase;
+}
+
+
 /*Basic body styling 
 body {
     font-family: Arial, sans-serif;
