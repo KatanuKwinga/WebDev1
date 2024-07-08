@@ -476,7 +476,7 @@ section{
 }
 /*End of Login Page CSS*/
 
-/*Contagt Us page CSS*/
+/*Contact Us page CSS*/
 .contactUs{
     max-height: 600px;
     overflow: scroll;
@@ -536,7 +536,7 @@ section{
     width: 100%;
     background-color: #d3ad7f;
 }
-/*Contact form
+/*Contact form*/
 
 .contactUs .formBox{
     position: relative;
@@ -591,7 +591,7 @@ section{
     cursor: pointer;
     padding-top: 5px;  
     padding-bottom: 5px; 
-}*/
+}
 
 /*Contact Info*/
 .contactUs .contactInfo{
