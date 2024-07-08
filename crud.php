@@ -84,6 +84,7 @@ $conn->close();
         <title>MyWebsite</title>
        <!-- custom css file link -->
         <link rel="stylesheet" href="css/crud.css">
+        <link rel = "icon" type = "image/x-icon" href = "images/Logo.png">
         <!--Link to the page for icons used in the code-->
         <script src="https://kit.fontawesome.com/061a76efba.js"crossorigin="anonymous"></script>
     </head>
@@ -115,17 +116,7 @@ $conn->close();
             </nav>
         </header>
 
-    <div class="container">
-        <div id="branding">
-            <h1>View, Edit, Delete</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="crud.php">Home</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<h1 class="title">CREATE, <span>READ, </span> UPDATE &<span> DELETE</h1> <!--Title-->  
 <div class="container">
     <?php if (isset($message)): ?>
         <!-- Display any messages (like success or error messages) -->
