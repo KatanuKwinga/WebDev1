@@ -7,10 +7,10 @@
         if(isset($_POST["send_message"])){
             $fn = $_POST["fullname"];
             $mail = $_POST["email_address"];
-            $subject = $_POST["subject_line"];
+            $phone = $_POST["phone_number"];
             $message = $_POST["client_message"];
 
-            $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
+            $insert_message = "INSERT INTO messages (sender_name, sender_email, , text_message) VALUES ('$fn', '$mail', '$phone', '$message')";
 
             if ($conn->query($insert_message) === TRUE) {
                 header("Location: contact.php");
@@ -20,41 +20,21 @@
             }
         }
         ?>
+       
         <!--Contact Us section starts-->
         <section class="contactUs" id = "contactUs">
             <h1 class="heading"><span> CONTACT </span> US<h1>    
-               <!-- <div class="title">
-                <h1><span>CONTACT</span> US</h1>Title
-            </div>-->
-            <div class="row">
-                <form action = "<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "POST" class = "contacts_form">
-                    <label for = "fn"><h1>Fullname : </h1></label><br><br>
-                    <input type = "text" id = "fn" placeholder = "Fullname" name = "fullname" class = "box" required><br><br>
-
-                    <label for = "em">Email Address:</label><br>
-                    <input type = "email" id = "em" placeholder = "Email Address" name = "email_address" class = "box" required><br><br>
-
-                    <label for = "sb">Subject:</label><br>
-                    <select name = "subject_line" id = "sb" class = "box" required>
-                        <option value = "">---Select Subject-</option>
-                        <opttion value = "Problems Ordering">Problems Ordering</option>
-                        <option value = "Complaint"> Complaints</option>
-                    </select><br><br>
-
-                    <label for = "sb"><h1>Message:</h1></label><br>
-                           <textarea name = "client_message" class = "box" id = "" cols = "30" rows = "5" required></textarea><br><br>
-                           <input type = "submit" name = "send_message" value = "Send Message">
-                </form>
+            <div class="title">
+                <h1><span>CONTACT</span> US</h1>
              </div>
-                <!--Contact form where customer inputs their details-->
-                <!--<div class="contact form">
-                    <form action="  " method="POST" class="contact form"></form>
+            <!--Contact form where customer inputs their details-->
+                    <div class="contact form">
+                    
                     <h3>SEND US A MESSAGE</h3>
                     <form>
                      <div class="formBox">
                         <div class="row50">
                         <div class="inputBox">
-                            <input type="text" name="first name">
                             <span><i class="fa-solid fa-user" style="margin-right: 5px;"></i>First Name</span>
                             <input type="text" placeholder="Jane">
                         </div>
@@ -81,6 +61,46 @@
                             <textarea placeholder="Type your message here"></textarea>
                         </div>
                         </div>
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                     </div>
+                    </form>
+                </div>
+                <!--Contact form where customer inputs their details
+                <div class="contact form">
+                    <form action="" method="POST" class="contact form"></form>
+                    <h3>SEND US A MESSAGE</h3>
+                    <form>
+                     <div class="formBox">
+                        <div class="row50">
+                        <div class="inputBox"> Input box for users name
+                            <span><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Full Name</span>
+                            <input type="text" id= "fn" placeholder = "Jane Doe" name="fullname" required>
+                        </div>
+                        <div class="inputBox"> Input box for user's email
+                            <span><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i>Email</span>
+                            <input type="email" id = "em" placeholder="janedoe@email.com" name = "email_address" required>
+                        </div>
+                        </div>
+
+
+                        <div class="row50">
+                        <div class="inputBox"> Input box for user's phone number
+                            <span><i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Mobile no.</span>
+                            <input type="text" id = "phone" placeholder="+254712345678" name = "phone_number" required>
+                        </div>
+                        </div>
+
+                        <div class="row100">
+                        <div class="inputBox"> Input box for user's message
+                            <span><i class="fa-solid fa-message" style="margin-right: 5px;"></i>Message</span>
+                            <textarea placeholder="Type your message here" id = "message" name = "client_message"></textarea>
+                        </div>
+                        </div>
+
                         <div class="row100">
                             <div class="inputBox">
                                 <input type="submit" value="Send">
