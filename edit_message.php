@@ -27,32 +27,47 @@ if(isset($_POST["update_message"])){
 }
 ?>
 
-<div class="banner">
-    <h1>Update Message</h1> 
-</div>
-
+<h1><span>Update</span> Message</h1> 
 <div class="row">
     <div class="content">
     <h1>Update Message</h1>
-    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
-        <label for="fn">Fullname:</label><br>
-        <input type="text" id="fn" placeholder="Fullname" name="fullname" required value="<?php print $spot_msg_row["sender_name"];?>"><br><br>
+    <div class="contact form">
+                    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?> " method="POST" class="contact form"></form>
+                    <h3>SEND US A MESSAGE</h3>
+                    <form>
+                     <div class="formBox">
+                        <div class="row50">
+                        <div class="inputBox"><!--Input box for users name-->
+                            <span><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Full Name</span>
+                            <input type="text" id= "fn" placeholder = "Jane Doe" name="full name" required>
+                        </div>
+                        <div class="inputBox"><!--Input box for user's email-->
+                            <span><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i>Email</span>
+                            <input type="email" id = "em" placeholder="janedoe@email.com" name = "email_address" required>
+                        </div>
+                        </div>
 
-        <label for="em">Email Address:</label><br>
-        <input type="email" id="em" placeholder="Email Address" name="email_address" required value="<?php print $spot_msg_row["sender_email"];?>"><br><br>
 
-        <label for="sb">Subject:</label><br>
-        <select name="subject_line" id="sb" required>
-            <option value="<?php print $spot_msg_row["subject_line"];?>"><?php print $spot_msg_row["subject_line"];?></option>
-            <option value="Account support">Account Support</option>
-            <option value="Place an order">Place an Order</option>
-            <option value="Complaints">Complaints</option>
-        </select><br><br>
+                        <div class="row50">
+                        <div class="inputBox"><!--Input box for user's phone number-->
+                            <span><i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Mobile no.</span>
+                            <input type="text" id = "phone" placeholder="+254712345678" name = "phone_number" required>
+                        </div>
+                        </div>
 
-        <label for="sb">Message:</label><br>
-        <textarea name="client_message" id="" cols="30" rows="5" required><?php print $spot_msg_row["text_message"];?></textarea><br><br>
-       
-        <input type="submit" name="update_message" value="Update Message">
-        <input type="hidden" name="messageId" value="<?php print $spot_msg_row["messageId"];?>">
-    </form>
+                        <div class="row100">
+                        <div class="inputBox"><!--Input box for user's message-->
+                            <span><i class="fa-solid fa-message" style="margin-right: 5px;"></i>Message</span>
+                            <textarea placeholder="Type your message here"></textarea>
+                        </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                     </div>
+                    </form>
+</div>
 </div>
