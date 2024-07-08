@@ -530,7 +530,14 @@ section{
 
 
 }
-/*Contact form*/
+
+.contactUs .row{
+    position: relative;
+    width: 100%;
+    background-color: #d3ad7f;
+}
+/*Contact form
+
 .contactUs .formBox{
     position: relative;
     width: 100%;
@@ -584,7 +591,7 @@ section{
     cursor: pointer;
     padding-top: 5px;  
     padding-bottom: 5px; 
-}
+}*/
 
 /*Contact Info*/
 .contactUs .contactInfo{
@@ -651,49 +658,29 @@ section{
 }
 /*End of Contact us page CSS*/
 
-/*css for products page*/
-.p_heading{
-    margin-top: 100px;
-    color: #fff;
-    font-size: 3rem;
-    text-align: center;
-}
-.p_heading span{
-    color: #d3ad7f;
-}
-.products h3{
-    color: #fff;
-    font-size: 1.5rem;
-    border-bottom: 2px #d3ad7f;
-    margin-bottom: 5px;
-}
-.products h3 span{
-    color: #d3ad7f;
-}
+/*css for the table*/
 table{
-    border: solid 1px #fff;
-    width: 70%;
+    border: 1px solid  rgb(83, 81, 78);
     border-collapse: collapse;
-    align-items: center;
+    width: 80%;
 }
 td{
-    border: solid 1px #333;
+    border: 1px solid  rgb(83, 81, 78);
     padding: 5px;
     text-align: left;
-    background-color: antiquewhite;
 }
 th{
-    background-color:#d3ad7f;
-    color: rgb(3, 3, 31);
-    border: solid 1px #333;
+    background-color:  rgb(83, 81, 78);
+    color: rgb(233, 233, 233);
+    border: 1px solid  rgb(83, 81, 78);
     padding: 5px;
     text-align: left;
 }
-tr:nth-child(even){
-    background-color:bisque;
+tr:nth-child(odd){
+    background-color: rgb(192, 186, 240);
 }
 tr:hover{
-    background-color:azure;
+    background-color: rgb(246, 247, 193);
 }
     
 
