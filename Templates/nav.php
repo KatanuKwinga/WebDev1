@@ -5,16 +5,15 @@
             <nav class="navbar">
                 <!--Code for the different links to other pages in the navbar-->
                 <a href="index.php">Home</a>
-                <a href="About.php">About Us</a>
+                <a href="About.php">About</a>
                 <a href="Menu.php">Menu</a>
-                <a href="products.php">Our Products</a>
                 <a href="Reviews.php">Reviews</a>
-                <a href="contact.php">Contact Us</a>
-                <a href="view_messages.php">View Messages</a>
-                <a href="edit_messages.php">Edit Messages</a>
+                <a href="contact.php">Contact</a>
+                <a href="view_messages.php">View</a>
+                <a href="edit_messages.php">Edit</a>
                 <div class="dropdown-container">
                     <!--Dropdown menu from the link 'More For You'-->
-                    <a href="#" class="dropdown-toggle">More For You</a>
+                    <a href="#" class="dropdown-toggle">More</a>
                     <ul class="dropdown">
                         <!--Icons and links to the different pages in the dropdown menu-->
                         <li><i class="fa-solid fa-right-to-bracket fa-2x" style="color: #fff; margin-left: 7px;"></i><a href="login.php">Log In</a></li>
