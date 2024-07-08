@@ -20,6 +20,11 @@ section{
     padding: 2rem 7%;
 
 }
+/*scrollbar css*/
+.crud{
+    max-height: 600px;
+    overflow: scroll;
+}
 /*Navbar header section with the logo, title and links to other pages*/
 .header{
     background: black;
@@ -126,15 +131,9 @@ section{
 }
 
 
-/*Basic body styling 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-/* Container to center content 
+
+/* Container to center content */
 .container {
     width: 80%;
     margin: auto;
@@ -182,7 +181,7 @@ header #branding h1 {
     margin: 0;
 }
 
-/* Form styling 
+/* Form styling */
 form {
     background: #fff;
     padding: 20px;
@@ -190,7 +189,7 @@ form {
     border: 1px solid #ccc;
 }
 
-/* Input field styling 
+/* Input field styling */
 input[type="text"], input[type="password"], input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -200,9 +199,9 @@ input[type="text"], input[type="password"], input[type="number"] {
     box-sizing: border-box;
 }
 
-/* Submit button styling 
+/* Submit button styling */
 input[type="submit"] {
-    background-color: #333;
+    background-color:#d3ad7f;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -211,12 +210,12 @@ input[type="submit"] {
     width: 100%;
 }
 
-/* Submit button hover effect 
+/* Submit button hover effect */
 input[type="submit"]:hover {
-    background-color: #555;
+    background-color:rgb(1, 1, 17);
 }
 
-/* Table styling 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
