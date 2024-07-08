@@ -17,11 +17,11 @@ if(isset($_GET["DelId"])){
 }
 ?>
     <div class="banner">
-        <h1>Messages</h1> 
+        <h1 style = "color: white">Messages</h1> 
     </div>
     <div class="row">
         <div class="content">
-            <h1>Messages<h1>
+            <h1 style = "color: white">Messages<h1>
                 
     <table>
         <thead>
