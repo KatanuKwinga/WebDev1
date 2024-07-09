@@ -126,7 +126,7 @@ $conn->close();
     <?php endif; ?>
 
     <h2>Create New Customer</h2>
-    <!-- Form for creating a new user -->
+    <!-- Form for creating a new customer-->
     <form method="post" action="">
         Name: <input type="text" name="name" required><br>
         Email: <input type="text" name="email" required><br>
@@ -135,7 +135,7 @@ $conn->close();
     </form><br>
     
     <h2>List of customers</h2>
-    <!-- Table displaying the list of users -->
+    <!-- Table displaying the list of customers -->
     <table>
         <tr>
             <th>id</th>
@@ -158,7 +158,7 @@ $conn->close();
     </table>
 
     <h2>Update Customers</h2>
-    <!-- Form for updating an existing user -->
+    <!-- Form for updating an existing customers -->
     <form method="post" action="">
         id: <input type="number" name="id" required><br>
         Name: <input type="text" name="name" required><br>
