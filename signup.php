@@ -4,46 +4,7 @@
         <!--Header section starts-->
         <?php include_once("Templates/nav.php"); ?>
         <!--Header section ends-->
-        <?php
-        if(isset($_POST["signup"])){
-            $fn = mysqli_real_escape_string($conn, $_POST["firstname"]);
-            $ln = mysqli_real_escape_string($conn, $_POST["lastname"]);
-            $mail = mysqli_real_escape_string($conn, $_POST["email_address"]);
-            $username = mysqli_real_escape_string($conn, $_POST["username"]);
-            $pass = mysqli_real_escape_string($conn, $_POST["passphrase"]);
-  
-        
-        // verify that the fullname contains only letters, space, and a signle quotion
-        
-        // verify that the email has the correct format
-        
-        if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
-            $_SESSION["wrong_email_format"] = "wrong email format";
-            $_SESSION["error"] = "";
-        }
-        
-        // verify that the email domain is authorized (strathmore.edu, gmail.com, yahoo.com, etc)
-        
-        // verify that the email address does not exist already in the database
-        
-        // verify that the username does not exist already in the database
-        
-        // verify that the password is identical to the repeat password
-        
-        // verify that the password length is between 4 and 8 characters
-        
-            if(!isset($_SESSION["error"])){
-                $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
-        
-                if ($conn->query($insert_message) === TRUE) {
-                    header("Location: view_messages.php");
-                    exit();
-                } else {
-                    echo "Error: " . $insert_message . "<br>" . $conn->error;
-                }
-            }
-        }
-        ?>
+       
 
         <!--Sign up section starts-->
         <section class="signup" id="signup">
