@@ -5,7 +5,7 @@
         <?php include_once("Templates/nav.php"); ?>
         <!--Header section ends-->
         <!--About section starts-->
-        <h1 class="title">ABOUT US</h1> <!--Title-->
+        <h1 class="title">ABOUT<span> US</span></h1> <!--Title-->
         <br><br><br>
     
         <section class="about" id="about">
