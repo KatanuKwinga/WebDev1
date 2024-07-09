@@ -4,39 +4,7 @@
         <!--Header section starts-->    	
         <?php include_once("Templates/nav.php"); ?>
         <!--Header section ends-->
-        <?php
-        if($_SERVER["REQUEST_METHOD"] == "POST"){
-            //database connection  details
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "customers";
-
-            $conn = mysqli_connect($servername, $username, $password, $database);
-
-            //Check connection
-            if($conn === false){
-                die("ERROR: Could not connect. " . mysqli_connect_error());
-            }
-
-            // Taking input values from the form
-            $user_name = $_POST['username'];
-            $password = $_POST['password'];
-
-            //Check if user exists in the database
-            $sql = "SELECT * FROM users WHERE username = '$user_name' AND password = '$password'";
-            $result = mysqli_query($conn, $sql);
-
-            if(mysqli_num_rows($result) > 0){
-                echo "<h3>Welcome, $user_name!<h3>";  
-            }else {
-                echo "<h3>Not a verfied customer</h3>";
-            }
-
-            //Close connectiom
-            mysqli_close($conn);
-        }
-        ?>
+       
         <!--Log in section starts-->
         <section class="login" id="login">
         <div class="loginBx">
