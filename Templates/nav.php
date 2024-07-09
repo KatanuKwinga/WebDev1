@@ -8,7 +8,7 @@
                 <a href="About.php">About</a>
                 <a href="Menu.php">Menu</a>
                 <a href="Reviews.php">Reviews</a>
-                <a href="contact.php">Contact</a>
+                <a href="contactUs.php">Contact</a>
                 <a href = "crud.php">Admin</a>
                 <div class="dropdown-container">
                     <!--Dropdown menu from the link 'More For You'-->
