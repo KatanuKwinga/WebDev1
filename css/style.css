@@ -20,6 +20,7 @@ section{
     padding: 2rem 7%;
 
 }
+
 /*CSS for the Home page heading and button*/
 .heading{
     text-align: center;
@@ -28,7 +29,7 @@ section{
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
-.header span{
+.heading span{
     color: #d3ad7f;
     text-transform: uppercase;
 }
@@ -524,7 +525,7 @@ section{
 }
 .contactUs{
     padding: 40px;
-    background:rgb(255, 240, 225);
+    background:rgb(1, 1, 17);
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 }
 .contactUs .row{
@@ -537,6 +538,7 @@ section{
 .contactUs .formBox{
     position: relative;
     width: 100%;
+    background-color: antiquewhite;
 }
 .contactUs .formBox .row50{
     display: flex;
